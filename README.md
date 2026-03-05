@@ -2,8 +2,8 @@
 
 * Support for launching Shizuku within other system users (like system UID 1000)
 * For use with privilege escalation exploits
-* Launch Shizuku with your exploit using `STARTER=$(pm path moe.shizuku.privileged.api | sed -E 's|^package:(.*/)[^/]+\.apk$|\1lib/arm64/libshizuku.so|') && $STARTER`
-* ...or hardcode correct path to `/data/app/{pkgId}/lib/arm64/libshizuku.so` and launch it directly without using the shell pipeline above
+* Launch Shizuku with your exploit using `STARTER=$(pm path moe.shizuku.privileged.api | sed -E 's|^package:(.*/)[^/]+\.apk$|\1lib/arm64/libshizuku.so|') && $STARTER` (the .so file is actually an executable)
+* ...or hardcode the correct path to `/data/app/{pkgId}/lib/arm64/libshizuku.so` and launch it directly without using the shell pipeline above.
 
 ____________________
 
