@@ -58,6 +58,7 @@
         android:banner="@drawable/ic_launcher"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:directBootAware="true"
+        android:extractNativeLibs="true"
         android:enableOnBackInvokedCallback="true"
         android:fullBackupContent="@xml/backup_descriptor"
         android:icon="@drawable/ic_launcher"
